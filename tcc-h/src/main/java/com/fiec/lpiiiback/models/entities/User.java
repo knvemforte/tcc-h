@@ -18,6 +18,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
+    private String lastName;
+    private String age;
     @Column(unique = true)
     private String email;
     private String cpf;

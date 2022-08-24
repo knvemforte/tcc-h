@@ -8,4 +8,6 @@ public class CreateUserRequestDto {
     String email;
     String password;
     String cpf;
+    String age;
+    String lastName;
 }

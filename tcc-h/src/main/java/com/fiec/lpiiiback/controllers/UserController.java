@@ -50,7 +50,10 @@ public class UserController {
                 createUserRequestDto.getName(),
                 createUserRequestDto.getEmail(),
                 createUserRequestDto.getPassword(),
-                createUserRequestDto.getCpf()
+                createUserRequestDto.getCpf(),
+                createUserRequestDto.getAge(),
+                createUserRequestDto.getLastName()
+
         ));
     }
 
@@ -79,7 +82,10 @@ public class UserController {
         return UserDto.convertToUserDto(userService.updateUser(userId,
                 createUserRequestDto.getName(),
                 createUserRequestDto.getPassword(),
-                createUserRequestDto.getCpf()
+                createUserRequestDto.getCpf(),
+                createUserRequestDto.getLastName(),
+                createUserRequestDto.getAge()
+
         ));
 
     }
@@ -111,7 +117,7 @@ public class UserController {
     @PostMapping(value="/csv", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public void createBulkOfUsers(@RequestParam("csvFile") MultipartFile multipartFile ) throws IOException {
         BufferedReader fileReader = new BufferedReader(new InputStreamReader(multipartFile.getInputStream(), "UTF-8"));
-        final int NAME=0, EMAIL=1, PASSWORD=2, CPF=3;
+        final int NAME=0, EMAIL=1, PASSWORD=2, CPF=3, LASTNAME=4, AGE=5;
         try (Reader reader = fileReader) {
             try (CSVReader csvReader = new CSVReader(reader)) {
                 List<String[]> csvFields =  csvReader.readAll();
@@ -121,10 +127,14 @@ public class UserController {
                             .name(csvFields.get(i)[NAME])
                             .password(csvFields.get(i)[PASSWORD])
                             .cpf(csvFields.get(i)[CPF])
+                            .lastName(csvFields.get(i)[LASTNAME])
+                            .age(csvFields.get(i)[AGE])
                             .build();
                     userService.signUpUser(newUser.getName(),
                             newUser.getEmail(),
-                            newUser.getPassword(), newUser.getCpf());
+                            newUser.getPassword(), newUser.getCpf(),
+                            newUser.getAge(),
+                            newUser.getLastName());
                 }
 
 

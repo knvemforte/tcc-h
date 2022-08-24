@@ -12,6 +12,8 @@ public class UserDto {
     String name;
     String profileImage;
     String cpf;
+    String age;
+    String lastName;
 
     public static UserDto convertToUserDto(User user){
         return UserDto.builder()
@@ -20,6 +22,8 @@ public class UserDto {
                 .name(user.getName())
                 .cpf(user.getCpf())
                 .profileImage(user.getProfileImage())
+                .age(user.getAge())
+                .lastName(user.getLastName())
                 .build();
     }
 }
