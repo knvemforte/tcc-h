@@ -130,6 +130,38 @@
 			<version>v2-rev170-1.25.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-messaging -->
+		<dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-messaging</artifactId>
+			<version>23.0.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-core -->
+		<dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-core</artifactId>
+			<version>21.1.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-admin -->
+		<dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-admin</artifactId>
+			<version>6.11.0</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-analytics -->
+		<dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-analytics</artifactId>
+			<version>21.0.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-auth -->
+		<dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-auth</artifactId>
+			<version>21.0.0</version>
+		</dependency>
+
 
 
 

@@ -12,8 +12,8 @@ public class BookResponseDto {
 
     private String name;
     private String description;
-
-
+    private String genre;
+    private String authorName;
     private String bookImage;
 
     public static BookResponseDto convert(Book book){
@@ -22,6 +22,8 @@ public class BookResponseDto {
                 .name(book.getName())
                 .description(book.getDescription())
                 .bookId(book.getBookId())
+                .genre(book.getGenre())
+                .authorName(book.getAuthorName())
                 .bookImage(book.getBookImage())
                 .build();
     }

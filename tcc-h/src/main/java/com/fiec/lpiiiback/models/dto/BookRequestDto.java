@@ -6,4 +6,7 @@ import lombok.Data;
 public class BookRequestDto {
     String name;
     String description;
+    String genre;
+    String authorName;
+
 }

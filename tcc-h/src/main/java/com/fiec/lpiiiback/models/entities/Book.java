@@ -26,8 +26,8 @@ public class Book {
 
     private String name;
     private String description;
-
+    private String genre;
     private String bookImage;
-
+    private String authorName;
 
 }
