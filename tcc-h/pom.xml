@@ -130,39 +130,41 @@
 			<version>v2-rev170-1.25.0</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-messaging -->
+		<!-- https://mvnrepository.com/artifact/com.jtransc/jtransc-rt-core -->
 		<dependency>
-			<groupId>com.google.firebase</groupId>
-			<artifactId>firebase-messaging</artifactId>
-			<version>23.0.0</version>
+			<groupId>com.jtransc</groupId>
+			<artifactId>jtransc-rt-core</artifactId>
+			<version>0.6.8</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-core -->
-		<dependency>
-			<groupId>com.google.firebase</groupId>
-			<artifactId>firebase-core</artifactId>
-			<version>21.1.0</version>
-		</dependency>
+
+
 		<!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-admin -->
 		<dependency>
 			<groupId>com.google.firebase</groupId>
 			<artifactId>firebase-admin</artifactId>
 			<version>6.11.0</version>
-			<scope>runtime</scope>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-analytics -->
-		<dependency>
-			<groupId>com.google.firebase</groupId>
-			<artifactId>firebase-analytics</artifactId>
-			<version>21.0.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-auth -->
-		<dependency>
-			<groupId>com.google.firebase</groupId>
-			<artifactId>firebase-auth</artifactId>
-			<version>21.0.0</version>
 		</dependency>
 
-
+		<!-- https://mvnrepository.com/artifact/com.google.auth/google-auth-library-oauth2-http -->
+		<dependency>
+			<groupId>com.google.auth</groupId>
+			<artifactId>google-auth-library-oauth2-http</artifactId>
+			<version>1.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>5.7.2</version>
+		</dependency>
 
 
 	</dependencies>
