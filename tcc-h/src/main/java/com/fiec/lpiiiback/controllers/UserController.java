@@ -61,8 +61,7 @@ public class UserController {
     public ResponseEntity login(@RequestBody LoginRequestDto loginRequestDto){
 
         User user = userService.login(
-                loginRequestDto.getEmail(),
-                loginRequestDto.getPassword()
+                loginRequestDto.getEmail()
         );
         if(user == null){
             return ResponseEntity.status(Response.SC_UNAUTHORIZED).build();
